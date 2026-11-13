@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+    <center>
+    <h1>Student Admission Form</h1>
+    <p>Welcome! Please fill in your details.</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address"
+                          rows="4" cols="30"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <p>
+                <label for="course">Choose Course:</label>
+                <select id="course" name="course">
+                    <option>Computer Science Engineering</option>
+                    <option>Electronics Engineering</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Civil Engineering</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="marks">Class 12 Marks:</label>
+                <input type="number" id="marks" name="marks"
+                       min="0" max="500">
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="checkbox" id="confirm" required>
+            <label for="confirm">
+                I confirm that the information is correct.
+            </label>
+        </p>
+
+        <input type="submit" value="Apply">
+        <input type="reset" value="Clear Form">
+
+    </form>
+    </center>
+</body>
+</html>
